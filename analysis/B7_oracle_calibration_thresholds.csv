@@ -1,0 +1,7 @@
+snr_db,session_spec,persistence_w,pipeline,rho_oracle_removed,quantile,threshold,n_calibration_rounds,n_calibration_seeds,oracle_removed_reports
+-9.0,fixed:20,0.0,OracleRemoval,0.0,0.95,1.6067551642225235,30000,150,0.0
+-9.0,fixed:20,0.0,OracleRemoval,0.2,0.95,1.6428338399085058,30000,150,4.0
+-9.0,fixed:20,0.0,OracleRemoval,0.4,0.95,1.68331137639646,30000,150,8.0
+-6.0,fixed:20,0.0,OracleRemoval,0.0,0.95,1.6067551642225235,30000,150,0.0
+-6.0,fixed:20,0.0,OracleRemoval,0.2,0.95,1.6428338399085058,30000,150,4.0
+-6.0,fixed:20,0.0,OracleRemoval,0.4,0.95,1.68331137639646,30000,150,8.0

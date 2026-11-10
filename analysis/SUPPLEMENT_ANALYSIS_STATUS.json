@@ -1,0 +1,42 @@
+{
+  "root": "/kaggle/working/XS_PH_B1_B10_SUPPLEMENT",
+  "outputs": [
+    "B2_rho_cap_summary.csv",
+    "B2_extreme_mild_summary.csv",
+    "B5_attacker_rank_summary.csv",
+    "B5_catch_by_subtype.csv",
+    "B5_catch_by_rank_band.csv",
+    "B5_displacement_summary.csv",
+    "B5_displacement_integrity.json",
+    "B6_baseline_performance_summary.csv",
+    "B6_paired_baseline_contrasts.csv",
+    "B7_oracle_calibration_thresholds.csv",
+    "B7_oracle_calibration_subset_checks.csv",
+    "B7_oracle_test_summary.csv",
+    "B8_roc_matched_pfa_per_seed.csv",
+    "B8_roc_matched_pfa_summary.csv",
+    "B8_clean_counterfactual_operating_summary.csv",
+    "B9_attack_none_summary.csv",
+    "B10_persistence_summary.csv",
+    "B10_paired_persistence_contrasts.csv"
+  ],
+  "missing_runs": [],
+  "notes": [
+    "Supplemental analyses are secondary/reviewer-requested and do not replace or pool with the frozen B1-V3 primary test.",
+    "B5 telemetry replay duplicates a subset of B2 split seed observations by design and must not be counted as additional independent seeds.",
+    "ROC PD@FPR=0.05 is estimated from each seed's held-out test round scores; it is a threshold-free test-ROC interpolation, not a preselected operating-point test.",
+    "BDFHistory is an adapted comparator, not an exact reproduction of the full BDF sequential method in Wu et al. (2024)."
+  ],
+  "B5_telemetry": {
+    "observations_rows": 5376000,
+    "decision_rows": 16128000,
+    "displacement_rows": 201600,
+    "outputs": [
+      "B5_attacker_rank_summary.csv",
+      "B5_catch_by_subtype.csv",
+      "B5_catch_by_rank_band.csv",
+      "B5_displacement_summary.csv",
+      "B5_displacement_integrity.json"
+    ]
+  }
+}

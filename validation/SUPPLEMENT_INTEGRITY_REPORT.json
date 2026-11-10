@@ -1,0 +1,184 @@
+{
+  "root": "/kaggle/working/XS_PH_B1_B10_SUPPLEMENT",
+  "run_reports": {
+    "B2_rho_cap": {
+      "present": true,
+      "status": "PASS",
+      "study_version": "B1-B10-supplement-instrumented",
+      "cells_completed": 12,
+      "test_seed_count_declared": 96,
+      "seed_level_rows": 10368,
+      "duplicate_seed_pipeline_rows": 0,
+      "calibration_test_pools_disjoint": true,
+      "disjoint_from_frozen_B1V3_pools": true,
+      "required_files": {
+        "seed": true,
+        "round": false,
+        "user": false,
+        "observations": false,
+        "displacement": false,
+        "oracle_subsets": true
+      },
+      "required_files_ok": true,
+      "seed_pools": {
+        "score_cal": [
+          84000,
+          84149
+        ],
+        "tau_cal": [
+          84200,
+          84349
+        ],
+        "test": [
+          85000,
+          85095
+        ]
+      }
+    },
+    "B2_extreme_mild_split": {
+      "present": true,
+      "status": "PASS",
+      "study_version": "B1-B10-supplement-instrumented",
+      "cells_completed": 14,
+      "test_seed_count_declared": 96,
+      "seed_level_rows": 4032,
+      "duplicate_seed_pipeline_rows": 0,
+      "calibration_test_pools_disjoint": true,
+      "disjoint_from_frozen_B1V3_pools": true,
+      "required_files": {
+        "seed": true,
+        "round": false,
+        "user": false,
+        "observations": false,
+        "displacement": false,
+        "oracle_subsets": true
+      },
+      "required_files_ok": true,
+      "seed_pools": {
+        "score_cal": [
+          84400,
+          84549
+        ],
+        "tau_cal": [
+          84600,
+          84749
+        ],
+        "test": [
+          85100,
+          85195
+        ]
+      }
+    },
+    "B6_B7_B8_B9_comparators": {
+      "present": true,
+      "status": "PASS",
+      "study_version": "B1-B10-supplement-instrumented",
+      "cells_completed": 6,
+      "test_seed_count_declared": 96,
+      "seed_level_rows": 9792,
+      "duplicate_seed_pipeline_rows": 0,
+      "calibration_test_pools_disjoint": true,
+      "disjoint_from_frozen_B1V3_pools": true,
+      "required_files": {
+        "seed": true,
+        "round": true,
+        "user": false,
+        "observations": false,
+        "displacement": false,
+        "oracle_subsets": true
+      },
+      "required_files_ok": true,
+      "seed_pools": {
+        "score_cal": [
+          86000,
+          86149
+        ],
+        "tau_cal": [
+          86200,
+          86349
+        ],
+        "test": [
+          87000,
+          87095
+        ]
+      }
+    },
+    "B10_persistence": {
+      "present": true,
+      "status": "PASS",
+      "study_version": "B1-B10-supplement-instrumented",
+      "cells_completed": 18,
+      "test_seed_count_declared": 96,
+      "seed_level_rows": 13824,
+      "duplicate_seed_pipeline_rows": 0,
+      "calibration_test_pools_disjoint": true,
+      "disjoint_from_frozen_B1V3_pools": true,
+      "required_files": {
+        "seed": true,
+        "round": false,
+        "user": false,
+        "observations": false,
+        "displacement": false,
+        "oracle_subsets": true
+      },
+      "required_files_ok": true,
+      "seed_pools": {
+        "score_cal": [
+          88000,
+          88149
+        ],
+        "tau_cal": [
+          88200,
+          88349
+        ],
+        "test": [
+          89000,
+          89095
+        ]
+      }
+    },
+    "B5_telemetry_replay": {
+      "present": true,
+      "status": "PASS",
+      "study_version": "B1-B10-supplement-instrumented",
+      "cells_completed": 7,
+      "test_seed_count_declared": 48,
+      "seed_level_rows": 1008,
+      "duplicate_seed_pipeline_rows": 0,
+      "calibration_test_pools_disjoint": true,
+      "disjoint_from_frozen_B1V3_pools": true,
+      "required_files": {
+        "seed": true,
+        "round": true,
+        "user": true,
+        "observations": true,
+        "displacement": true,
+        "oracle_subsets": true
+      },
+      "required_files_ok": true,
+      "seed_pools": {
+        "score_cal": [
+          84400,
+          84549
+        ],
+        "tau_cal": [
+          84600,
+          84749
+        ],
+        "test": [
+          85100,
+          85147
+        ]
+      }
+    },
+    "B5_replay_relationship": {
+      "status": "PASS",
+      "exact_48_seed_subset_of_B2_split": true,
+      "note": "B5 rows are a telemetry replay, not new independent test data."
+    }
+  },
+  "cross_run_test_seed_overlaps": [],
+  "integrity_status": "PASS",
+  "problems": [],
+  "important_note": "B1-V3 seed pools remain frozen. B5 is an intentional replay of B2 split seeds for telemetry, not an independent inferential sample."
+}

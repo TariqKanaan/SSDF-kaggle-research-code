@@ -1,0 +1,3 @@
+# Supplemental analysis notes
+
+These files are intended to address reviewer-requested secondary analyses. They do not alter or replace the frozen B1-V3 primary experiment. B5 telemetry replays a subset of B2 split seeds; it is used for mechanism/identity analysis only and is not pooled as extra independent sample size. The matched-PFA diagnostic interpolates held-out test ROC curves at FPR=0.05; operating-point PFA values from the independently calibrated threshold are reported separately. BDFHistory is a transparent adaptation inspired by the beta-reputation component of the cited BDF paper, not a faithful reproduction of its full sequential procedure.
