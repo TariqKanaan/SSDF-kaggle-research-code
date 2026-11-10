@@ -1,0 +1,12 @@
+{
+  "v2_aggregate.csv.gz": "0feca40ebd4fb70e25b5a2d2f12ab0d386c854f25d1a09c158d3b4650f07a0f3",
+  "v2_block_boundaries.csv.gz": "ff9fb632f77a72cb316868ebfc9b6ec4ba83b47ae9db04aea0086dbfb7ae1b6b",
+  "v2_calibration_scores.csv.gz": "beb57a60757d2d2a3dd3e0e6a81df97b83d021d6917c724ab77e0b6f7d186697",
+  "v2_manifest.json": "48819eb0205624bf49efdd43f577091b7674287b65d99b22482b92be190d6772",
+  "v2_oracle_calibration_subsets.csv.gz": "bcd1fd022ee2d42452687813dd218c5fc8cf523a16ba824db98a53341b6e1116",
+  "v2_score_bank_sizes.csv.gz": "ae9e3282324dfdca0e974fdb34dec04088addc30b339b4fce866703c6fc8e32e",
+  "v2_seed_ledger.json": "3bdcbe66cc932518943c5a8a26706e2284311d8ee09c6d314c0854b51c568790",
+  "v2_seed_level.csv.gz": "6e18fe241aaf03f066bcbe51f742b0241f25be06695b0a59c70233603f2c4612",
+  "v2_session_boundaries.csv.gz": "934be024c32bc2be4e324a62e1bc9e1bc4e6aa89c876f767d23497c3dbb140e8",
+  "v2_thresholds.csv.gz": "602d4c70c4c9de0c9ffe48d031f28b231e36f6ec6c2ed8351f61d60b7845b70b"
+}
