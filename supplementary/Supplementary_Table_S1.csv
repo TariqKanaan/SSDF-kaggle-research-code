@@ -1,0 +1,97 @@
+ID,Analysis role,SNR (dB),rho,Attack,Comparator,Mean J (XS-PH),Mean J (comparator),Delta J,95% paired bootstrap CI,Exact sign p,Holm adj. p,Direction,CI excludes zero?,Holm p < 0.05?,Both criteria? (either dir.),XS superiority?
+1,Core exploratory,-9,0.20,masking,Trim10,0.4230,0.4165,+0.0065,"[-0.1013, +0.1253]",0.8238,1.0000,XS-PH better,No,No,No,No
+2,Core exploratory,-9,0.20,masking,Trim20,0.4230,0.4113,+0.0118,"[-0.0745, +0.1070]",0.8238,1.0000,XS-PH better,No,No,No,No
+3,Core exploratory,-9,0.20,masking,Trim40,0.4230,0.3215,+0.1015,"[+0.0197, +0.1802]",0.0118,0.1182,XS-PH better,Yes,No,No,No
+4,Core exploratory,-9,0.20,masking,Median,0.4230,0.2960,+0.1270,"[+0.0475, +0.2028]",0.0118,0.1182,XS-PH better,Yes,No,No,No
+5,Core exploratory,-6,0.20,masking,Trim10,0.5830,0.5810,+0.0020,"[-0.0765, +0.0725]",0.2632,1.0000,XS-PH better,No,No,No,No
+6,Core exploratory,-6,0.20,masking,Trim20,0.5830,0.5467,+0.0362,"[-0.0310, +0.1003]",0.2632,1.0000,XS-PH better,No,No,No,No
+7,Core exploratory,-6,0.20,masking,Trim40,0.5830,0.5045,+0.0785,"[-0.0065, +0.1660]",0.2632,1.0000,XS-PH better,No,No,No,No
+8,Core exploratory,-6,0.20,masking,Median,0.5830,0.4920,+0.0910,"[+0.0052, +0.1793]",0.2632,1.0000,XS-PH better,Yes,No,No,No
+9,Exploratory,-18,0.40,masking,Trim10,0.0387,0.0517,-0.0130,"[-0.0447, +0.0180]",1.0000,1.0000,XS-PH worse,No,No,No,No
+10,Exploratory,-18,0.40,masking,Trim20,0.0387,0.0690,-0.0302,"[-0.0680, +0.0075]",0.5034,1.0000,XS-PH worse,No,No,No,No
+11,Exploratory,-18,0.40,masking,Trim40,0.0387,0.0693,-0.0305,"[-0.0575, -0.0008]",0.0636,0.6357,XS-PH worse,Yes,No,No,No
+12,Exploratory,-18,0.40,masking,Median,0.0387,0.0488,-0.0100,"[-0.0405, +0.0198]",0.5034,1.0000,XS-PH worse,No,No,No,No
+13,Exploratory,-12,0.40,masking,Trim10,0.2290,0.0927,+0.1363,"[+0.0825, +0.1945]",0.0007,0.0080,XS-PH better,Yes,Yes,Yes,Yes
+14,Exploratory,-12,0.40,masking,Trim20,0.2290,0.2003,+0.0288,"[-0.0437, +0.0995]",0.8238,1.0000,XS-PH better,No,No,No,No
+15,Exploratory,-12,0.40,masking,Trim40,0.2290,0.1925,+0.0365,"[-0.0245, +0.0975]",0.5034,1.0000,XS-PH better,No,No,No,No
+16,Exploratory,-12,0.40,masking,Median,0.2290,0.1862,+0.0428,"[-0.0045, +0.0870]",0.1153,0.6919,XS-PH better,No,No,No,No
+17,Exploratory,-9,0.40,masking,Trim10,0.3775,0.0862,+0.2913,"[+0.2162, +0.3640]",0.0000,0.0007,XS-PH better,Yes,Yes,Yes,Yes
+18,Exploratory,-9,0.40,masking,Trim20,0.3775,0.1840,+0.1935,"[+0.1245, +0.2635]",0.0026,0.0258,XS-PH better,Yes,Yes,Yes,Yes
+19,Exploratory,-9,0.40,masking,Trim40,0.3775,0.2777,+0.0998,"[+0.0167, +0.1825]",0.1153,0.4613,XS-PH better,Yes,No,No,No
+20,Exploratory,-9,0.40,masking,Median,0.3775,0.2835,+0.0940,"[+0.0167, +0.1720]",0.1153,0.4613,XS-PH better,Yes,No,No,No
+21,Exploratory,-6,0.40,masking,Trim10,0.5390,0.1670,+0.3720,"[+0.2873, +0.4565]",0.0000,0.0008,XS-PH better,Yes,Yes,Yes,Yes
+22,Exploratory,-6,0.40,masking,Trim20,0.5390,0.3533,+0.1857,"[+0.0957, +0.2775]",0.0118,0.0945,XS-PH better,Yes,No,No,No
+23,Exploratory,-6,0.40,masking,Trim40,0.5390,0.3937,+0.1452,"[+0.0688, +0.2250]",0.0414,0.2069,XS-PH better,Yes,No,No,No
+24,Exploratory,-6,0.40,masking,Median,0.5390,0.3765,+0.1625,"[+0.0835, +0.2430]",0.0414,0.2069,XS-PH better,Yes,No,No,No
+25,Secondary / descriptive,-18,0.20,masking,Trim10,0.0800,0.0548,+0.0253,"[-0.0057, +0.0583]",0.6291,1.0000,XS-PH better,No,No,No,No
+26,Secondary / descriptive,-18,0.20,masking,Trim20,0.0800,0.0685,+0.0115,"[-0.0215, +0.0425]",0.3323,1.0000,XS-PH better,No,No,No,No
+27,Secondary / descriptive,-18,0.20,masking,Trim40,0.0800,0.0367,+0.0432,"[+0.0143, +0.0730]",0.0490,0.4414,XS-PH better,Yes,No,No,No
+28,Secondary / descriptive,-18,0.20,masking,Median,0.0800,0.0345,+0.0455,"[+0.0122, +0.0772]",0.0127,0.1527,XS-PH better,Yes,No,No,No
+29,Secondary / descriptive,-18,0.20,always_yes,Trim10,0.0290,0.0272,+0.0018,"[-0.0183, +0.0222]",1.0000,1.0000,XS-PH better,No,No,No,No
+30,Secondary / descriptive,-18,0.20,always_yes,Trim20,0.0290,0.0220,+0.0070,"[-0.0073, +0.0225]",1.0000,1.0000,XS-PH better,No,No,No,No
+31,Secondary / descriptive,-18,0.20,always_yes,Trim40,0.0290,0.0352,-0.0063,"[-0.0243, +0.0148]",0.2101,1.0000,XS-PH worse,No,No,No,No
+32,Secondary / descriptive,-18,0.20,always_yes,Median,0.0290,0.0380,-0.0090,"[-0.0338, +0.0150]",0.3323,1.0000,XS-PH worse,No,No,No,No
+33,Secondary / descriptive,-18,0.20,always_no,Trim10,0.0120,0.0203,-0.0083,"[-0.0220, +0.0055]",0.1797,1.0000,XS-PH worse,No,No,No,No
+34,Secondary / descriptive,-18,0.20,always_no,Trim20,0.0120,0.0343,-0.0222,"[-0.0375, -0.0085]",0.0034,0.0410,XS-PH worse,Yes,Yes,Yes,No
+35,Secondary / descriptive,-18,0.20,always_no,Trim40,0.0120,0.0170,-0.0050,"[-0.0215, +0.0107]",0.4240,1.0000,XS-PH worse,No,No,No,No
+36,Secondary / descriptive,-18,0.20,always_no,Median,0.0120,0.0130,-0.0010,"[-0.0160, +0.0147]",0.4240,1.0000,XS-PH worse,No,No,No,No
+37,Secondary / descriptive,-18,0.40,always_yes,Trim10,0.0365,0.0542,-0.0177,"[-0.0377, +0.0008]",0.8036,1.0000,XS-PH worse,No,No,No,No
+38,Secondary / descriptive,-18,0.40,always_yes,Trim20,0.0365,0.0483,-0.0118,"[-0.0312, +0.0068]",0.4807,1.0000,XS-PH worse,No,No,No,No
+39,Secondary / descriptive,-18,0.40,always_yes,Trim40,0.0365,0.0260,+0.0105,"[-0.0088, +0.0288]",0.2101,1.0000,XS-PH better,No,No,No,No
+40,Secondary / descriptive,-18,0.40,always_yes,Median,0.0365,0.0300,+0.0065,"[-0.0112, +0.0255]",1.0000,1.0000,XS-PH better,No,No,No,No
+41,Secondary / descriptive,-18,0.40,always_no,Trim10,0.0103,0.0063,+0.0040,"[-0.0085, +0.0180]",1.0000,1.0000,XS-PH better,No,No,No,No
+42,Secondary / descriptive,-18,0.40,always_no,Trim20,0.0103,0.0195,-0.0092,"[-0.0360, +0.0145]",1.0000,1.0000,XS-PH worse,No,No,No,No
+43,Secondary / descriptive,-18,0.40,always_no,Trim40,0.0103,0.0073,+0.0030,"[-0.0095, +0.0170]",1.0000,1.0000,XS-PH better,No,No,No,No
+44,Secondary / descriptive,-18,0.40,always_no,Median,0.0103,0.0115,-0.0013,"[-0.0118, +0.0092]",1.0000,1.0000,XS-PH worse,No,No,No,No
+45,Secondary / descriptive,-12,0.20,masking,Trim10,0.1797,0.1928,-0.0130,"[-0.0745, +0.0517]",1.0000,1.0000,XS-PH worse,No,No,No,No
+46,Secondary / descriptive,-12,0.20,masking,Trim20,0.1797,0.1888,-0.0090,"[-0.0805, +0.0620]",1.0000,1.0000,XS-PH worse,No,No,No,No
+47,Secondary / descriptive,-12,0.20,masking,Trim40,0.1797,0.1385,+0.0413,"[-0.0260, +0.1058]",0.2632,1.0000,XS-PH better,No,No,No,No
+48,Secondary / descriptive,-12,0.20,masking,Median,0.1797,0.1363,+0.0435,"[-0.0222, +0.1077]",0.2632,1.0000,XS-PH better,No,No,No,No
+49,Secondary / descriptive,-12,0.20,always_yes,Trim10,0.1465,0.1680,-0.0215,"[-0.0540, +0.0103]",0.3593,1.0000,XS-PH worse,No,No,No,No
+50,Secondary / descriptive,-12,0.20,always_yes,Trim20,0.1465,0.1313,+0.0152,"[-0.0293, +0.0613]",0.8238,1.0000,XS-PH better,No,No,No,No
+51,Secondary / descriptive,-12,0.20,always_yes,Trim40,0.1465,0.1245,+0.0220,"[-0.0338, +0.0765]",1.0000,1.0000,XS-PH better,No,No,No,No
+52,Secondary / descriptive,-12,0.20,always_yes,Median,0.1465,0.1168,+0.0297,"[-0.0220, +0.0818]",0.8238,1.0000,XS-PH better,No,No,No,No
+53,Secondary / descriptive,-12,0.20,always_no,Trim10,0.1140,0.0985,+0.0155,"[-0.0168, +0.0493]",0.6291,1.0000,XS-PH better,No,No,No,No
+54,Secondary / descriptive,-12,0.20,always_no,Trim20,0.1140,0.0897,+0.0243,"[-0.0175, +0.0675]",0.4545,1.0000,XS-PH better,No,No,No,No
+55,Secondary / descriptive,-12,0.20,always_no,Trim40,0.1140,0.1087,+0.0053,"[-0.0420, +0.0563]",0.6476,1.0000,XS-PH better,No,No,No,No
+56,Secondary / descriptive,-12,0.20,always_no,Median,0.1140,0.1155,-0.0015,"[-0.0488, +0.0495]",0.8145,1.0000,XS-PH worse,No,No,No,No
+57,Secondary / descriptive,-12,0.40,always_yes,Trim10,0.1960,0.1953,+0.0008,"[-0.0305, +0.0335]",0.8145,1.0000,XS-PH better,No,No,No,No
+58,Secondary / descriptive,-12,0.40,always_yes,Trim20,0.1960,0.1847,+0.0112,"[-0.0285, +0.0548]",1.0000,1.0000,XS-PH better,No,No,No,No
+59,Secondary / descriptive,-12,0.40,always_yes,Trim40,0.1960,0.1847,+0.0112,"[-0.0393, +0.0592]",0.8238,1.0000,XS-PH better,No,No,No,No
+60,Secondary / descriptive,-12,0.40,always_yes,Median,0.1960,0.1735,+0.0225,"[-0.0258, +0.0695]",0.8238,1.0000,XS-PH better,No,No,No,No
+61,Secondary / descriptive,-12,0.40,always_no,Trim10,0.1025,0.0830,+0.0195,"[-0.0132, +0.0550]",1.0000,1.0000,XS-PH better,No,No,No,No
+62,Secondary / descriptive,-12,0.40,always_no,Trim20,0.1025,0.0845,+0.0180,"[-0.0208, +0.0568]",0.6291,1.0000,XS-PH better,No,No,No,No
+63,Secondary / descriptive,-12,0.40,always_no,Trim40,0.1025,0.0978,+0.0047,"[-0.0360, +0.0448]",0.6476,1.0000,XS-PH better,No,No,No,No
+64,Secondary / descriptive,-12,0.40,always_no,Median,0.1025,0.0968,+0.0057,"[-0.0310, +0.0440]",0.4807,1.0000,XS-PH better,No,No,No,No
+65,Secondary / descriptive,-9,0.20,always_yes,Trim10,0.4565,0.4368,+0.0198,"[-0.0232, +0.0648]",0.6291,1.0000,XS-PH better,No,No,No,No
+66,Secondary / descriptive,-9,0.20,always_yes,Trim20,0.4565,0.4228,+0.0338,"[-0.0168, +0.0828]",0.8238,1.0000,XS-PH better,No,No,No,No
+67,Secondary / descriptive,-9,0.20,always_yes,Trim40,0.4565,0.3623,+0.0943,"[+0.0375, +0.1515]",0.1153,0.6919,XS-PH better,Yes,No,No,No
+68,Secondary / descriptive,-9,0.20,always_yes,Median,0.4565,0.3625,+0.0940,"[+0.0352, +0.1510]",0.0414,0.3725,XS-PH better,Yes,No,No,No
+69,Secondary / descriptive,-9,0.20,always_no,Trim10,0.3425,0.3103,+0.0323,"[-0.0150, +0.0780]",0.3323,0.6646,XS-PH better,No,No,No,No
+70,Secondary / descriptive,-9,0.20,always_no,Trim20,0.3425,0.2863,+0.0563,"[+0.0082, +0.1010]",0.0636,0.3725,XS-PH better,Yes,No,No,No
+71,Secondary / descriptive,-9,0.20,always_no,Trim40,0.3425,0.2805,+0.0620,"[+0.0195, +0.1017]",0.1671,0.5012,XS-PH better,Yes,No,No,No
+72,Secondary / descriptive,-9,0.20,always_no,Median,0.3425,0.2592,+0.0833,"[+0.0430, +0.1215]",0.0414,0.3725,XS-PH better,Yes,No,No,No
+73,Secondary / descriptive,-9,0.40,always_yes,Trim10,0.4617,0.4542,+0.0075,"[-0.0413, +0.0583]",1.0000,1.0000,XS-PH better,No,No,No,No
+74,Secondary / descriptive,-9,0.40,always_yes,Trim20,0.4617,0.3985,+0.0633,"[-0.0008, +0.1283]",0.8238,1.0000,XS-PH better,No,No,No,No
+75,Secondary / descriptive,-9,0.40,always_yes,Trim40,0.4617,0.3618,+0.1000,"[+0.0293, +0.1665]",0.1153,0.8072,XS-PH better,Yes,No,No,No
+76,Secondary / descriptive,-9,0.40,always_yes,Median,0.4617,0.3210,+0.1407,"[+0.0767, +0.2063]",0.0118,0.1418,XS-PH better,Yes,No,No,No
+77,Secondary / descriptive,-9,0.40,always_no,Trim10,0.3683,0.3025,+0.0658,"[+0.0295, +0.1040]",0.0636,0.1271,XS-PH better,Yes,No,No,No
+78,Secondary / descriptive,-9,0.40,always_no,Trim20,0.3683,0.2727,+0.0955,"[+0.0408, +0.1568]",0.0118,0.0827,XS-PH better,Yes,No,No,No
+79,Secondary / descriptive,-9,0.40,always_no,Trim40,0.3683,0.2457,+0.1225,"[+0.0550, +0.1928]",0.0118,0.0827,XS-PH better,Yes,No,No,No
+80,Secondary / descriptive,-9,0.40,always_no,Median,0.3683,0.2517,+0.1165,"[+0.0508, +0.1865]",0.0026,0.0387,XS-PH better,Yes,Yes,Yes,Yes
+81,Secondary / descriptive,-6,0.20,always_yes,Trim10,0.7432,0.6713,+0.0720,"[+0.0235, +0.1200]",0.1153,0.2306,XS-PH better,Yes,No,No,No
+82,Secondary / descriptive,-6,0.20,always_yes,Trim20,0.7432,0.6280,+0.1153,"[+0.0670, +0.1633]",0.0004,0.0056,XS-PH better,Yes,Yes,Yes,Yes
+83,Secondary / descriptive,-6,0.20,always_yes,Trim40,0.7432,0.5300,+0.2132,"[+0.1628, +0.2673]",0.0000,0.0008,XS-PH better,Yes,Yes,Yes,Yes
+84,Secondary / descriptive,-6,0.20,always_yes,Median,0.7432,0.4985,+0.2447,"[+0.1812, +0.3078]",0.0000,0.0008,XS-PH better,Yes,Yes,Yes,Yes
+85,Secondary / descriptive,-6,0.20,always_no,Trim10,0.6833,0.5952,+0.0880,"[+0.0540, +0.1222]",0.0001,0.0014,XS-PH better,Yes,Yes,Yes,Yes
+86,Secondary / descriptive,-6,0.20,always_no,Trim20,0.6833,0.5477,+0.1355,"[+0.0922, +0.1825]",0.0001,0.0014,XS-PH better,Yes,Yes,Yes,Yes
+87,Secondary / descriptive,-6,0.20,always_no,Trim40,0.6833,0.4878,+0.1955,"[+0.1242, +0.2680]",0.0004,0.0064,XS-PH better,Yes,Yes,Yes,Yes
+88,Secondary / descriptive,-6,0.20,always_no,Median,0.6833,0.4848,+0.1985,"[+0.1270, +0.2770]",0.0004,0.0064,XS-PH better,Yes,Yes,Yes,Yes
+89,Secondary / descriptive,-6,0.40,always_yes,Trim10,0.6452,0.6548,-0.0095,"[-0.0610, +0.0395]",1.0000,1.0000,XS-PH worse,No,No,No,No
+90,Secondary / descriptive,-6,0.40,always_yes,Trim20,0.6452,0.6268,+0.0185,"[-0.0467, +0.0783]",0.2632,0.5264,XS-PH better,No,No,No,No
+91,Secondary / descriptive,-6,0.40,always_yes,Trim40,0.6452,0.5867,+0.0585,"[-0.0160, +0.1308]",0.0414,0.2069,XS-PH better,No,No,No,No
+92,Secondary / descriptive,-6,0.40,always_yes,Median,0.6452,0.5565,+0.0887,"[+0.0158, +0.1590]",0.0118,0.1064,XS-PH better,Yes,No,No,No
+93,Secondary / descriptive,-6,0.40,always_no,Trim10,0.6595,0.5680,+0.0915,"[+0.0470, +0.1375]",0.0023,0.0141,XS-PH better,Yes,Yes,Yes,Yes
+94,Secondary / descriptive,-6,0.40,always_no,Trim20,0.6595,0.5235,+0.1360,"[+0.0820, +0.1910]",0.0013,0.0105,XS-PH better,Yes,Yes,Yes,Yes
+95,Secondary / descriptive,-6,0.40,always_no,Trim40,0.6595,0.5333,+0.1263,"[+0.0665, +0.1842]",0.0118,0.0355,XS-PH better,Yes,Yes,Yes,Yes
+96,Secondary / descriptive,-6,0.40,always_no,Median,0.6595,0.4975,+0.1620,"[+0.0980, +0.2265]",0.0192,0.0384,XS-PH better,Yes,Yes,Yes,Yes
