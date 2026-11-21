@@ -1,0 +1,5 @@
+# Reanalysis environment used to generate B2_cap4_vs_cap8_holm_reanalysis.csv
+# Python 3.13.5
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0
