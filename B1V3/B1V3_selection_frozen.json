@@ -1,0 +1,67 @@
+{
+  "study": "B1-V3",
+  "selected_ph": {
+    "candidate": "ph_d002_t5",
+    "delta": 0.02,
+    "threshold": 5.0,
+    "beta": 0.05,
+    "warmup": 5,
+    "min_block": 5,
+    "development_mean_J_random": 0.4709375,
+    "development_mean_clean_PFA_random": 0.060625,
+    "development_mean_FFRclean_random": 0.0016937500000000002,
+    "guardrail_pass": true,
+    "selection_note": "Selected the highest-development-J PH candidate among candidates passing clean PFA and FFR guardrails."
+  },
+  "selected_fixed_k": {
+    "K": 50,
+    "pipeline": "XS-fixed50",
+    "development_mean_J_random": 0.4629375,
+    "development_mean_clean_PFA_random": 0.059625,
+    "development_mean_FFRclean_random": 0.0021125000000000002,
+    "guardrail_pass": true,
+    "selection_note": "Selected globally from fixed-only development run; tie-break prefers K=20 then smaller K."
+  },
+  "primary_test": {
+    "session_spec": "random_balanced:13,20,30,50",
+    "snrs_db": [
+      -9.0,
+      -6.0
+    ],
+    "attack": "masking",
+    "rho": 0.2,
+    "primary_metric": "J_attack",
+    "primary_contrasts": [
+      "XS-PH vs XS-fixed20",
+      "XS-PH vs XS-fixed50"
+    ],
+    "n_primary_tests": 4,
+    "clean_pfa_target": 0.05
+  },
+  "sample_size_plan": {
+    "meaningful_delta_J": 0.05,
+    "family_alpha": 0.05,
+    "number_primary_tests": 4,
+    "bonferroni_alpha_for_planning": 0.0125,
+    "target_power": 0.9,
+    "max_paired_sd_across_dev_candidates_and_primary_contrasts": 0.12747322494125218,
+    "recommended_independent_test_seeds_per_condition": 96,
+    "estimated_power_at_recommended_n_from_development_sd": 0.9000793475938107,
+    "sample_size_search_cap_reached": false,
+    "warning": "Planning estimate based on development paired SD, not achieved power. Freeze the test size before inspecting final-test outcomes."
+  },
+  "development_seed_range": [
+    64000,
+    64039
+  ],
+  "score_calibration_seed_range": [
+    65000,
+    65059
+  ],
+  "threshold_calibration_seed_range": [
+    65100,
+    65159
+  ],
+  "final_test_seed_start": 73000,
+  "separation_note": "PH settings and K-best selected using development pools only. Final test seeds are disjoint from development and calibration seeds."
+}

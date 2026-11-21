@@ -1,0 +1,14 @@
+{
+  "seed_level_rows": 6912,
+  "n_test_seeds": 96,
+  "duplicate_seed_pipeline_rows": 0,
+  "max_abs_J_identity_error": 1.1102230246251565e-16,
+  "session_schedule_groups": 1152,
+  "session_schedule_mismatches_across_SNR": 0,
+  "block_trajectory_groups": 27648,
+  "invalid_block_partitions": 0,
+  "seed_pool_overlap_pairs": [],
+  "identity_or_schedule_mismatch_groups_across_SNR": 0,
+  "problems": [],
+  "status": "PASS"
+}
