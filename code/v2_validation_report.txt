@@ -1,0 +1,48 @@
+XS-PH V2 instrumentation validation report
+===========================================
+
+Purpose
+-------
+Engineering/integrity checks for the V2 instrumented experiment generator and
+analysis scripts. This report is NOT a scientific result and the smoke runs are
+NOT sufficiently powered to support performance claims.
+
+Checks passed
+-------------
+1. `python -m py_compile *.py` passed for all Python files in the package.
+2. `python validate_v2.py` passed:
+   - V1 and V2 generated H0/H1 sequences were bit-identical in the legacy
+     fixed:20 / legacy_sorted path for masking, upward shift, downward shift,
+     and no-attack conditions.
+   - V2 persistence generator reproduced the V1 persistence generator at
+     w=0.5, fixed:20, legacy_sorted for the same four attack labels.
+   - V2 XS telemetry implementation preserved V1 numerical XS outputs for
+     Page-Hinkley and fixed-20 block modes on deterministic 100-round inputs.
+   - Variable-session and independent extreme/mild subgroup metadata checks
+     passed.
+3. End-to-end smoke runs completed and `analyze_v2.py` completed on their
+   output folders. Smoke runs exercised:
+   - fixed and random session schedules;
+   - masking and explicit no-attack cells;
+   - w=0, 0.5 and 0.9 persistence settings across the smoke examples;
+   - cap values 4, 8 and 12, and multiple fixed block lengths;
+   - XS-PH, XS-fixed, robust fusion, Huber, BetaHistory and OracleRemoval.
+4. Smoke output schema checks confirmed the presence of:
+   - per-user identity/subgroup and raw-report ranks;
+   - per-pipeline residuals, conformal p-values where applicable, BH flags,
+     exclusion and retention decisions;
+   - true session boundaries and detector block boundaries;
+   - clean PD/PFA/J and clean report false-exclusion rates;
+   - subgroup Catch and per-round displacement decomposition;
+   - Oracle calibration subset identities;
+   - threshold-transfer diagnostics for persistence.
+5. In the compact smoke output, the maximum absolute displacement
+   decomposition error was approximately 1e-15 (floating-point roundoff).
+
+Important limitation
+--------------------
+No full V2 scientific evaluation was run as part of preparing this package.
+The default test/calibration counts and the commands in README_V2_AR.md are
+protocol recommendations only. The user must run the full, frozen V2 design,
+retain the generated manifests/ledgers/raw CSV.GZ files, and report all positive
+and negative findings without presenting smoke-test numbers as paper results.

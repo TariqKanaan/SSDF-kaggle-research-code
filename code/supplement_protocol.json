@@ -1,0 +1,112 @@
+{
+  "study": "XS-PH supplemental reviewer-response experiments B2/B5/B6/B7/B8/B9/B10",
+  "version": "1.0",
+  "status": "pre-run protocol; no supplemental outcomes are claimed",
+  "frozen_primary_reference": {
+    "study": "B1-V3",
+    "must_not_modify": true,
+    "ph": {"delta": 0.02, "threshold": 5.0, "beta": 0.05, "warmup": 5, "min_block": 5},
+    "fixed_k_reference": [20, 50],
+    "test_seed_range": [73000, 73095],
+    "score_calibration_seed_range": [72000, 72149],
+    "threshold_calibration_seed_range": [72200, 72349]
+  },
+  "common_settings": {
+    "N": 20,
+    "rounds": 200,
+    "session_spec": "fixed:20",
+    "snrs_db": [-9.0, -6.0],
+    "tau_quantile": 0.95,
+    "nominal_clean_pfa_target": 0.05,
+    "score_calibration_seeds_per_run": 150,
+    "threshold_calibration_seeds_per_run": 150,
+    "test_seeds_per_condition": 96,
+    "subgroup_assignment": "random",
+    "ph": {"delta": 0.02, "threshold": 5.0, "beta": 0.05, "warmup": 5, "min_block": 5},
+    "calibration_note": "XS conformal score banks are trained at persistence w=0; clean-H0 operating thresholds are recalibrated separately at each requested persistence level. Achieved test PFA must be reported and is not forced to equal 0.05."
+  },
+  "runs": {
+    "B2_rho_cap": {
+      "purpose": "Rho dose-response and exclusion-cap sensitivity, with a fixed 50/50 extreme/mild masking mixture.",
+      "snrs": [-9.0, -6.0],
+      "rhos": [0.1, 0.2, 0.3, 0.4, 0.5],
+      "extreme_fractions": [0.5],
+      "caps": [4, 8, 12],
+      "fixed_blocks": [20, 50],
+      "attacks": ["none", "masking"],
+      "pipelines": ["XS-PH", "XS-fixed"],
+      "score_cal_seeds": [84000, 84149],
+      "tau_cal_seeds": [84200, 84349],
+      "test_seeds": [85000, 85095],
+      "telemetry": "seed-level only"
+    },
+    "B2_extreme_mild_split": {
+      "purpose": "Separate the extreme/mild composition effect from rho at rho=0.2 and 0.4.",
+      "snrs": [-9.0, -6.0],
+      "rhos": [0.2, 0.4],
+      "extreme_fractions": [0.0, 0.5, 1.0],
+      "caps": [8],
+      "fixed_blocks": [20, 50],
+      "attacks": ["none", "masking"],
+      "pipelines": ["XS-PH", "XS-fixed"],
+      "score_cal_seeds": [84400, 84549],
+      "tau_cal_seeds": [84600, 84749],
+      "test_seeds": [85100, 85195],
+      "telemetry": "seed-level only; detailed B5 telemetry is a separate replay of the first 48 seeds at -9 dB"
+    },
+    "B5_telemetry_replay": {
+      "purpose": "Per-user attacker ranking, decisions, catch by subtype, and displacement decomposition.",
+      "snrs": [-9.0],
+      "rhos": [0.2, 0.4],
+      "extreme_fractions": [0.0, 0.5, 1.0],
+      "caps": [8],
+      "fixed_blocks": [20, 50],
+      "attacks": ["none", "masking"],
+      "pipelines": ["XS-PH", "XS-fixed"],
+      "score_cal_seeds": [84400, 84549],
+      "tau_cal_seeds": [84600, 84749],
+      "test_seeds": [85100, 85147],
+      "telemetry": "full user observations, user decisions, and displacement; exact replay subset of B2_extreme_mild_split; do not pool duplicate rows into inferential n"
+    },
+    "B6_B7_B8_B9_comparators": {
+      "purpose": "Baseline comparison, corrected OracleRemoval calibration, clean/no-attack operating behavior, and ROC/matched-PFA analysis.",
+      "snrs": [-9.0, -6.0],
+      "rhos": [0.2, 0.4],
+      "extreme_fractions": [0.5],
+      "caps": [8],
+      "fixed_blocks": [20, 50],
+      "attacks": ["none", "masking"],
+      "pipelines": ["NoDefense", "MLG+TM", "MAD", "Sn", "Qn", "TTF-CF", "Trim10", "Trim20", "Trim40", "Median", "Huber", "BetaHistory", "BDFHistory", "OracleRemoval", "XS-PH", "XS-fixed"],
+      "score_cal_seeds": [86000, 86149],
+      "tau_cal_seeds": [86200, 86349],
+      "test_seeds": [87000, 87095],
+      "telemetry": "round-level fused statistics retained for ROC; user-level telemetry skipped"
+    },
+    "B10_persistence": {
+      "purpose": "Persistence stress comparison at w=0, 0.5, and 0.9.",
+      "snrs": [-9.0, -6.0],
+      "rhos": [0.2, 0.4],
+      "extreme_fractions": [0.5],
+      "persistence_ws": [0.0, 0.5, 0.9],
+      "caps": [8],
+      "fixed_blocks": [20, 50],
+      "attacks": ["none", "masking"],
+      "pipelines": ["NoDefense", "Huber", "BetaHistory", "BDFHistory", "TTF-CF", "XS-PH", "XS-fixed"],
+      "score_cal_seeds": [88000, 88149],
+      "tau_cal_seeds": [88200, 88349],
+      "test_seeds": [89000, 89095],
+      "telemetry": "seed-level only"
+    }
+  },
+  "analysis_status": {
+    "B1_V3_primary": "completed independently; frozen and excluded from new experiment runs",
+    "supplemental_runs": "not yet run",
+    "confirmatory_claims": "B1-V3 primary results remain the only confirmatory primary contrasts. Supplemental factorial and baseline analyses are additional reviewer-requested analyses and will be labeled accordingly."
+  },
+  "baseline_disclosure": {
+    "BetaHistory": "Existing study-adapted Beta-Bernoulli anomaly-history comparator; not claimed as exact reproduction of a cited paper.",
+    "BDFHistory": "New study-adapted windowed Beta peer-consistency comparator inspired by the reputation component of Wu et al. (2024), Electronics 13, 3386, DOI 10.3390/electronics13173386. It is not an exact reproduction of their full weighted sequential likelihood-ratio procedure.",
+    "Huber": "Adaptive Huber M-estimator of location with IRLS weights; per-round robust location comparator.",
+    "OracleRemoval": "Calibrated on clean H0 after removing a random subset of exactly L reports per calibration seed, where L matches the requested rho; at test it removes known attacker identities. Oracle is an upper-bound reference, not an implementable detector."
+  }
+}

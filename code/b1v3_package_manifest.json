@@ -1,0 +1,145 @@
+{
+  "package": "XS-PH B1-V3 Kaggle package",
+  "created_utc": "2026-11-09",
+  "python_source_count": 19,
+  "notebook_cells": 23,
+  "notebook_code_cells": 11,
+  "validation_report": "b1v3_validation_report.json",
+  "files": [
+    {
+      "file": "B1V3_ENGINEERING_VALIDATION_REPORT.md",
+      "sha256": "b8db55521efd0697aec89ca7853f233a850741a9b31ec4f5e8dcac3334d8ad5d",
+      "bytes": 3209
+    },
+    {
+      "file": "README_B1_V3_AR.md",
+      "sha256": "75c97388d38dea01c6e17400f02074d62f48782f47111b8981b7dd065fbb9896",
+      "bytes": 13568
+    },
+    {
+      "file": "README_V2_AR.md",
+      "sha256": "571e30a08c53832b88c4a5f2343ea62d5ac29bd47179f8e6b1c5d55ed08e8916",
+      "bytes": 17699
+    },
+    {
+      "file": "XS_PH_B1_V3_Kaggle_Complete.ipynb",
+      "sha256": "8b137b54c8db39ee196dd139f661019cb84d44a41bc32f13b4aae890011c38d4",
+      "bytes": 22004
+    },
+    {
+      "file": "analyze_b1v3.py",
+      "sha256": "f74b83c1d85ff78e305de929ac8caad49c67b7f565ead93e018002698ad4213a",
+      "bytes": 33210
+    },
+    {
+      "file": "analyze_v2.py",
+      "sha256": "91ed4ae4b210f3e908d2364593d577f947437d7c37d0d66308c6526ff7749820",
+      "bytes": 22957
+    },
+    {
+      "file": "b1v3_validation_report.json",
+      "sha256": "79e6bcbcab7b996b205dd79af4566bed454a13cf147daeb99b34a06915a49dba",
+      "bytes": 2321
+    },
+    {
+      "file": "config_final.py",
+      "sha256": "4f84ae2c3468c53eb08190e4506a5526f36638c0245120cf09d6ba9d5a7916a1",
+      "bytes": 4914
+    },
+    {
+      "file": "paradigm_a_final.py",
+      "sha256": "9dcfc1996dc2e4ea8025335c4edce53f408776e8ed4712a0c075448a72d95d86",
+      "bytes": 5488
+    },
+    {
+      "file": "plan_seed_count.py",
+      "sha256": "0a297d0d23c3c48a2cdd182ebe13c7b654ec4951a3c46349fcef037ea3fbbec4",
+      "bytes": 4018
+    },
+    {
+      "file": "requirements.txt",
+      "sha256": "f142438f66d01368c12445257d924a7dae75eb908b42b5c138e8873bbe85d1c9",
+      "bytes": 54
+    },
+    {
+      "file": "run_b1v3_development.py",
+      "sha256": "bd6a35ba7b5d306556db923e6cd6082a2183425530356526b61c611768cf49fe",
+      "bytes": 7101
+    },
+    {
+      "file": "run_b1v3_final.py",
+      "sha256": "1a625297497b23d1f77f484bbdceafff44c19d67336c099049c894e13401bb06",
+      "bytes": 7593
+    },
+    {
+      "file": "run_final_experiment.py",
+      "sha256": "70d15e5caf7d2fd6fc1280622f440d370b77f0e45b69305719a2815f0e508620",
+      "bytes": 23836
+    },
+    {
+      "file": "run_xs_study_v2.py",
+      "sha256": "6675dc561fa4fc4b27df7f3806256b6802e2818dae2a27be7831196703128dfb",
+      "bytes": 59082
+    },
+    {
+      "file": "select_b1v3_development.py",
+      "sha256": "c3a5cb9d26b9c90f09463217bd32629a8322dd24587a4f30cc1036aa0b41cd95",
+      "bytes": 14577
+    },
+    {
+      "file": "system_model_final.py",
+      "sha256": "1112f8142088a339022c2f1329537992c727e0d2b600a10eba4860ecc02078d2",
+      "bytes": 7599
+    },
+    {
+      "file": "ttf_cf_final.py",
+      "sha256": "7ff803ac13e554f00b2202fdf5104f475449ccab39b3bd21fe787806805ad55f",
+      "bytes": 6502
+    },
+    {
+      "file": "v2_seed_count_plan_from_v1.csv",
+      "sha256": "b9bf7798a484e2703079546be1c5c93b97394d3978a6053430777502c9e340da",
+      "bytes": 1390
+    },
+    {
+      "file": "v2_validation_report.txt",
+      "sha256": "d61e032c5066a4d78dae12eb32a92c9f47c41c0f390993df706ff6f6f8500143",
+      "bytes": 2506
+    },
+    {
+      "file": "validate_b1v3.py",
+      "sha256": "1c38bffd2191af94937ed734babd91e63ed179ea2639d3bbc56d605737e295d2",
+      "bytes": 3968
+    },
+    {
+      "file": "validate_v2.py",
+      "sha256": "6c4ce974507e70df3f0551a5c9e2578978086b6518c73553a2544f8c0e91c0a5",
+      "bytes": 4425
+    },
+    {
+      "file": "xs_config.py",
+      "sha256": "385297c144a806a02c2ea6b9ca914ce7d1e20df965f4180cc3ff9d268af22016",
+      "bytes": 4302
+    },
+    {
+      "file": "xs_experiment_v2.py",
+      "sha256": "3a195b7882212dfe968ff8e4a694aadb25b27beacdbf820764a19a39cf63c6b3",
+      "bytes": 13926
+    },
+    {
+      "file": "xs_filter_final_v1_reference.py",
+      "sha256": "d32119a015b8c634320126e1f4637636963fa8b5c7d79cfd0cc541234a9399db",
+      "bytes": 5571
+    },
+    {
+      "file": "xs_filter_v2.py",
+      "sha256": "e7be20012ed3117497c8e1c9d8308009e25746192dbf01f7997875c3c80d2165",
+      "bytes": 8313
+    },
+    {
+      "file": "xs_scenarios_v1_reference.py",
+      "sha256": "17c8290365628526936fc6d4b86323dcd1fa9c279dc0e61a7094602f3916485c",
+      "bytes": 3482
+    }
+  ]
+}
